@@ -74,12 +74,87 @@
 
 // console.log(percentage);
 
-var originalPrice = 100 ;
-var discountPercent = 20 ;
+// var originalPrice = 100 ;
+// var discountPercent = 20 ;
 
-var discountAmount = originalPrice * discount ;
-var discount =originalPrice / discountPercent;
+// var discount =originalPrice / discountPercent;
+// var discountAmount = originalPrice * discount ;
 
-var finalPrice = originalPrice - discountAmount
-console.log(finalPrice)
+
+// var finalPrice = originalPrice - discountAmount
+// console.log(finalPrice)
+
+// console.log(9>10);
+// console.log(9<10);
+// console.log(9 == 10);
+// console.log(10 == 10);
+// console.log(8 >= 10);
+// console.log(10 <= 13);
+// console.log(10 <= 13);
+
+
+// var applePrice = 200 ;
+// var orangePrice = 300 ;
+
+// console.log(applePrice < orangePrice);
+
+// console.log(10 == '10');
+// console.log(10 === '10');
+
+// console.log(10 != '10');
+// console.log(10 !== '10');
+
+// var price = 400;
+
+// if (price > 300) {
+    
+//     console.log('yes');
+// }
+// var money = 400;
+
+// if (money > 300) {
+    
+//     console.log('yes');
+// }else{
+//     console.log('no')
+// }
+
+
+const apple = 100 ;
+const orange = 150;
+const blueBarry = 300 ;
+
+// if ( (apple > 101) && (blueBarry>apple) ) {
+    
+//     console.log(' go');
+    
+// }else{
+//     console.log('dont go');
+    
+// }
+
+if ((blueBarry<=300 && orange>160) || blueBarry >=300  )  {
+    
+    console.log('buy');
+    
+}else{
+    console.log('cancel');
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
