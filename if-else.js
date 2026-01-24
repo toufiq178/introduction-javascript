@@ -246,31 +246,31 @@
 //               bus fare calculator 
 //...........................................
 
-let ticket = 800 ;
-const age = 40 ;
-const children = true ;
-const student = false ;
-const seniorCitizens = true ;
+// let ticket = 800 ;
+// const age = 40 ;
+// const children = true ;
+// const student = false ;
+// const seniorCitizens = true ;
 
-if (children=== true && age < 10) {
+// if (children=== true && age < 10) {
     
-    console.log('free');
+//     console.log('free');
     
-}else if (student=== true){
+// }else if (student=== true){
 
-    discount= 50 / 100 *ticket
-    discount50 = ticket - discount
-    console.log(discount50)  
+//     discount= 50 / 100 *ticket
+//     discount50 = ticket - discount
+//     console.log(discount50)  
 
-}else if (seniorCitizens=== true && age>=60) {
+// }else if (seniorCitizens=== true && age>=60) {
 
-    discount= 15 / 100 *ticket
-    discount15 = ticket - discount
-    console.log(discount15)  
-}else{
+//     discount= 15 / 100 *ticket
+//     discount15 = ticket - discount
+//     console.log(discount15)  
+// }else{
 
-    console.log(ticket)
-}
+//     console.log(ticket)
+// }
 
 
 
