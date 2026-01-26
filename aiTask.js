@@ -62,14 +62,14 @@
 
 // console.log(morning.concat(evening));
 
-//  slice task 
+// //  slice task 
 
-let fruit = ['apple', 'banana', 'orange', 'mango', 'guava']
+// let fruit = ['apple', 'banana', 'orange', 'mango', 'guava']
 
-fruit.splice(1,3 ,'papaya');
+// fruit.splice(1,3 ,'papaya');
 
 
-console.log(fruit)
+// console.log(fruit)
 
 
 
