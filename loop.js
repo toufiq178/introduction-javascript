@@ -134,34 +134,120 @@
 // }
 
 
+// 
+
+// for (let num = 30 ; num>=10 ; num --){
+//     console.log(num);
+    
+// }
+
+// let number = [1, 4,2];
+// for ( let num of number){
+//     console.log(num)
+// }
+
+// let num = 30;
+// while (num >=10) {
+//     num --;
+//     console.log(num);
+// }
+
+// let num =3;
+// let multiply = 1;
+// while (multiply <=10) {
+  
+        
+//     console.log(num ,'x', multiply ,'=',(num*multiply));
+        
+//     multiply++
+// }
+
+// for(let num = 21 ; num>=15; num--){
+//     console.log(num);
+    
+// }
 
 
 
 
 
 
+// let number = 1;
+// while (number<=30 ){
+//     number++;
+//     if(number % 5 === 0){
+//         console.log(number);
+//     }
+    
+// }
+
+
+// even
+// for(let even = 0 ; even<=20 ; even= even + 2){
+
+//     console.log('even',even)
+// }
+
+// // odd 
+// for (let odd = 1 ; odd<=20; odd= odd+2){
+//     console.log('odd', odd)
+// }
+
+// multiply
+// let multiply =0 ;
+// for (let num = 0 ; num <=10; num++){
+
+//     multiply = num * num ;
+//     console.log(multiply);
+    
+// }
+
+// divide 
+// let divide = 2 ;
+// for (let num = 1 ; num<=20 ; num++)
+// {
+//     total = num / divide ;
+//     console.log(total.toFixed(2));
+// }
 
 
 
+// for (num = 1; num <=30 ; num++){
+
+//     if (num % 3 === 0) {
+        
+//         console.log(num);
+        
+//     }
+// }
+
+// for ( num = 1 ; num <=30 ; num++){
+//     if (num % 3 === 0 || num % 5 === 0) {
+        
+
+//         console.log(num);
+//     }
+// }
 
 
+// for (num = 1 ; num<=50 ; num++){
+//     if (num % 4 === 0 && num % 7 === 0) {
+        
+//         console.log(num);
+        
+//     }
+// }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let num = 1 ;
+let total = 0;
+while ( num <=40){
+    num++
+    if (num % 6 ===0 ) {
+        
+        
+        total = total +num ;
+        console.log(num);
+    }
+   
+}
+console.log('total',total);
