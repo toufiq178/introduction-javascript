@@ -65,8 +65,6 @@ let myObject = {
 // console.log(keys , values);
 
 for ( let prop in myObject){
-
-    
     // console.log(prop);
     console.log('key :', prop , "|", 'type:', typeof myObject[prop]);
 }
