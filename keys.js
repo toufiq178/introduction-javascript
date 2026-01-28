@@ -32,12 +32,19 @@ const collage ={
     }
 }
 
-collage.unique.color = 'red'
+// collage.unique.color = 'red'
 
-const key = collage.unique.color
-console.log(key);
+// const key = collage.unique.color
+// console.log(key);
 
-delete collage.class;
-collage.event[1]='20 sep'
-console.log(collage.event[1])
-console.log(collage);
+// delete collage.class;
+// collage.event[1]='20 sep'
+// console.log(collage.event[1])
+// console.log(collage);
+
+for(const i in collage){
+
+    // console.log(i);
+    // console.log(collage[i]);
+    
+}
