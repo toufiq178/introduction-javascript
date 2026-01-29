@@ -183,18 +183,40 @@
 
 // }
 
-let student = [
+let students = [
   { name: "John", marks: 85 },
   { name: "Alice", marks: 90 }
 ];
 
-for (let i = 0; i < student.length; i++) {
+// for( let student of students ){
+
+//     console.log(student.name + ' scored ' + student.marks);
     
-    let n = student[i];
-    console.log(n);
+// }
+
+let i = 0;
+while (i <students.length) {
     
+    let s = students[i];
+    i++;
+    console.log(s.name + ' scored ' + s.marks);
     
 }
+// for (let i = 0; i < student.length; i++) {
+    
+//     let s = student[i];
+//     // s.marks = 'scored ';
+//     // s.scored = s.marks;
+//     // delete s.marks;
+//     // let n = s.name ;
+//     // let m = s.scored;
+
+//     // John scored 85
+//     console.log(s.name + ' scored ' + s.marks);
+     
+    
+    
+// }
 
 
 // Task 7
