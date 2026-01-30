@@ -99,17 +99,17 @@
 // Given an array of strings, find the word with the most characters and print it.
 // Expected Output: 'Programming' (or 'Development')
 // Input: 
-const names = ['Programming', 'Hero', 'Web', 'Demvelopment'];
+// const names = ['Programming', 'Hero', 'Web', 'Demvelopment'];
 
-let l = names[0]
+// let l = names[0]
 
-for ( let i of names){
+// for ( let i of names){
 
-    if (i.length > l.length) {
+//     if (i.length > l.length) {
         
-        l = i
-    }
-}console.log(l);
+//         l = i
+//     }
+// }console.log(l);
 
 
 
@@ -128,3 +128,55 @@ for ( let i of names){
 
     
 // }console.log(n);
+
+
+
+// Square the Numbers
+// Create a new array that contains the square of each number from the original array.
+// Expected Output: [4, 9, 16, 25]
+// Input:
+// 
+
+// let n = []
+
+// for( let i  of numbers){
+//     n.push(i * i)
+// }
+// console.log(n);
+
+// const numbers =  [2, 3, 4, 5] ;
+
+// let num = [];
+// for (let i = 0; i < numbers.length; i++) {
+//     let element = numbers[i];
+    
+//     num.push(element * element);
+// }
+// console.log(num);
+
+
+// Given an array of products, print only the names of products that cost more than 500.
+// Input:
+// javascript
+
+// Given an array of products, print only the names of products that cost more than 500.
+// Expected Output:
+// Laptop
+// Monitor
+const products = [
+  { name: "Laptop", price: 1200 },
+  { name: "Mouse", price: 30 },
+  { name: "Monitor", price: 600 }
+];
+
+
+for ( let product of products) {
+
+    if (product.price > 500) {
+        
+        console.log(product.name );
+        // console.log(product.name ); 
+    }   
+    
+}
+
