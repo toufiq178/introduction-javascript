@@ -135,7 +135,7 @@
 // Create a new array that contains the square of each number from the original array.
 // Expected Output: [4, 9, 16, 25]
 // Input:
-// 
+
 
 // let n = []
 
@@ -163,20 +163,21 @@
 // Expected Output:
 // Laptop
 // Monitor
-const products = [
-  { name: "Laptop", price: 1200 },
-  { name: "Mouse", price: 30 },
-  { name: "Monitor", price: 600 }
-];
+// const products = [
+//   { name: "Laptop", price: 1200 },
+//   { name: "Mouse", price: 30 },
+//   { name: "Monitor", price: 600 }
+// ];
 
 
-for ( let product of products) {
+// for ( let product of products) {
 
-    if (product.price > 500) {
+//     if (product.price > 500) {
         
-        console.log(product.name );
-        // console.log(product.name ); 
-    }   
+//         console.log(product.name );
+//         // console.log(product.name ); 
+//     }   
     
-}
+// }
+
 
