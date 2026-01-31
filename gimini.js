@@ -423,15 +423,15 @@ for ( let result of results){
 // console.log(totalValue); 
 // Expected: (10*50) + (200*5) + (500*2) = 2500
 
-const people = ["Abir", "Sumi", "Rakib", "Anika", "John"];
+// const people = ["Abir", "Sumi", "Rakib", "Anika", "John"];
 
-// Start your loop here...
+// // Start your loop here...
 
-for ( let p of people){
+// for ( let p of people){
 
-    if (p === 'Rakib') {
+//     if (p === 'Rakib') {
         
-        console.log('found it');
-        break;
-    }
-}
+//         console.log('found it');
+//         break;
+//     }
+// }
