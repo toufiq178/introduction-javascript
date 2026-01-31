@@ -181,18 +181,57 @@
 // const number = sum(arr);
 // console.log(number);
 
-function square(params) {
+// function square(params) {
     
-    let n = []
+//     let n = []
 
-    for(let number of params){
+//     for(let number of params){
 
-        let square = number * number
-        n.push(square);
+//         let square = number * number
+//         n.push(square);
 
+//     }
+//     return n;
+// }
+// const arr = [4, 7, 3, 8];
+// const sq = square(arr);
+// console.log(sq);
+
+
+function evenNumbers(numbers) {
+    
+    let eNumbers =[];
+    for(let number of numbers){
+
+        if (number % 2 === 0) {
+            
+            eNumbers.push(number);
+        }
     }
-    return n;
+    return eNumbers ;
 }
-const arr = [4, 7, 3, 8];
-const sq = square(arr);
-console.log(sq);
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const even = evenNumbers(numbers);
+// console.log('even numbers' , even);
+
+
+function sumOfEven(numbers) {
+    
+    let sum = 0
+    for( let number of numbers){
+
+        if (number % 2 === 0) {
+            
+           sum = sum + number
+           
+
+        }
+    }
+    return sum;
+}
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const evens = sumOfEven(numbers);
+console.log(evens);
+
