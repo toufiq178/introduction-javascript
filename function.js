@@ -117,3 +117,82 @@
 
 // console.log(Odd2);
 
+// function  isEvenOdd( str) {
+    
+//     if (str.length % 2 === 0) {
+        
+//         console.log('even');
+        
+//         return true
+//     }else{
+
+//         console.log('odd');
+//         return false ;
+//     }
+// }
+// const str = 'dhaqka'
+// const strOddEven = isEvenOdd(str)
+// console.log(strOddEven);
+
+
+// function double(number , double) {
+    
+//     if (double === true) {
+        
+//         return number * 2; 
+//     }
+//     else{
+
+//         return number * 3
+//     }
+// }
+
+// const dd = double(40 , true);
+// console.log(dd);
+// const tt = double(40 ,false);
+// console.log(tt);
+
+
+// // array length
+// function arr( arr) {
+//     const length = arr.length;
+//     return length ;
+// }
+
+// const array = [1, 3,4,5,6,9,2,2,2];
+// const len = arr(array);
+// console.log(len);
+
+
+
+// function sum (params) {
+
+//     let s = 0 ;
+//     for( let number of params){
+
+//         s = s + number;
+        
+//     }
+//     return s ;
+    
+// }
+
+// const arr = [2, 4, 2, 1, 5];
+// const number = sum(arr);
+// console.log(number);
+
+function square(params) {
+    
+    let n = []
+
+    for(let number of params){
+
+        let square = number * number
+        n.push(square);
+
+    }
+    return n;
+}
+const arr = [4, 7, 3, 8];
+const sq = square(arr);
+console.log(sq);
