@@ -215,20 +215,223 @@
 
 // console.log(onlyNumbers); 
 
-const num = [2, 5, 8, 10, 3];
-let results = [];
+// const num = [2, 5, 8, 10, 3];
+// let results = [];
 
-// Your logic here...
-for(let n of num){
+// // Your logic here...
+// for(let n of num){
 
-    if (n > 5) {
+//     if (n > 5) {
         
-        results.push(n*10);
-    }
-    else{
+//         results.push(n*10);
+//     }
+//     else{
 
-        results.push(n*2);
+//         results.push(n*2);
+//     }
+// }
+// console.log(results);
+// // Expected Output: [4, 10, 80, 100, 6]
+
+// const users = [
+//     { name: "Rakib", age: 25 },
+//     { name: "Sumi", age: 18 },
+//     { name: "Arif", age: 30 }
+// ];
+
+// let namesOnly = [];
+
+// // Your loop here...
+// for (let user of users){
+
+//    let nm  = user.name
+//     namesOnly.push(nm);
+
+// }
+// console.log(namesOnly); 
+// // Expected Output: ["Rakib", "Sumi", "Arif"]
+
+
+
+// const users = [
+//     { name: "Rakib", age: 25 },
+//     { name: "Sumi", age: 18 },
+//     { name: "Arif", age: 30 },
+//     { name: "Anika", age: 15 }
+// ];
+
+// let vips = [];
+
+// for (let user of users){
+
+//     if (user.age > 20) {
+        
+//         vips.push(user);
+//     }
+// }
+
+// console.log(vips);
+// /* Expected Output: [
+//     { name: "Rakib", age: 25 },
+//     { name: "Arif", age: 30 }
+// ] 
+// */
+
+
+// const guestList = ["Abir", "Sumi", "Rakib", "Anika"];
+// const showedUp = ["Sumi", "Anika"];
+// let present = [];
+
+// for ( let guest of guestList){
+
+//     if (showedUp.includes(guest)) {
+        
+//         present.push(guest);
+//     }
+// }
+
+// console.log("People present:", present);
+// // Expected Output: ["Sumi", "Anika"]
+
+// const fruits = ["Apple", "Banana", "Kiwi", "Strawberry", "Pear", "Watermelon"];
+// let longWords = [];
+
+// // Your loop here...
+// for ( let fruit of fruits ){
+
+//     if (fruit.length > 5) {
+        
+//         longWords.push(fruit)
+//     }
+// }
+
+// console.log(longWords);
+// Expected Output: ["Banana", "Strawberry", "Watermelon"]
+
+// const students = ["Arif", "Sumi", "Anika", "Rakib", "Abir", "John"];
+// let aCount = 0;
+
+// // Your loop here...
+// for ( let student of students){
+
+//     if (student[0]=== 'A') {
+        
+//         aCount++;
+//     }
+// }
+
+
+// console.log("Students starting with A:", aCount);
+// // Expected Output: 3
+
+// const groceries = ["Milk", "Egg", "Sugar", "Bread", "Sugar", "Butter"];
+// let healthyList = [];
+
+// // Your loop goes here...
+// for( let gro of groceries){
+
+//     if (gro !== 'Sugar') {
+        
+//         healthyList.push(gro);
+//     }
+// }
+
+
+// console.log(healthyList);
+// Expected Output: ["Milk", "Egg", "Bread", "Butter"]
+
+// const dirtyData = ["Apple", null, "Banana", null, "Orange", "Mango"];
+// let cleanedData = [];
+
+// // Your logic here...
+// for ( let dirty of dirtyData){
+
+//     if (dirty !== null) {
+        
+//         cleanedData.push(dirty)
+//     }
+// }
+
+// console.log(cleanedData);
+// Expected Output: ["Apple", "Banana", "Orange", "Mango"]
+
+const results = [
+    { name: "Abir", passed: true },
+    { name: "Sumi", passed: false },
+    { name: "Rakib", passed: true }
+];
+let passList = [];
+
+// Your loop here...
+for ( let result of results){
+
+    if (result.passed === true) {
+        
+        passList.push(result.name)
     }
 }
-console.log(results);
-// Expected Output: [4, 10, 80, 100, 6]
+
+
+// console.log(passList);
+// // Expected Output: ["Abir", "Rakib"]
+
+// const products = [
+//     { name: "Shirt", price: 100 },
+//     { name: "Shoes", price: 200 },
+//     { name: "Pants", price: 150 }
+// ];
+
+// for(let product of products){
+
+//     product.price = product.price - 10 ;}
+// console.log(products);
+// const items = [
+//     { name: "Laptop", stock: 10 },
+//     { name: "Mouse", stock: 3 },
+//     { name: "Keyboard", stock: 12 },
+//     { name: "Monitor", stock: 2 }
+// ];
+
+// let lowStockNames = [];
+
+// // Start your code here...
+// for( let item of items){
+
+//     if (item.stock < 5) {
+        
+//         lowStockNames.push(item.name)
+//     }
+// }
+
+// console.log(lowStockNames); 
+// Expected: ["Mouse", "Monitor"]
+
+// const products = [
+//     { name: "Pen", price: 10, stock: 50 },
+//     { name: "Book", price: 200, stock: 5 },
+//     { name: "Bag", price: 500, stock: 2 }
+// ];
+
+// let totalValue = 0;
+
+// // Code start here...
+// for(let product of products){
+
+//    let p =  product.price * product.stock
+//     totalValue = totalValue + p
+// }
+// console.log(totalValue); 
+// Expected: (10*50) + (200*5) + (500*2) = 2500
+
+const people = ["Abir", "Sumi", "Rakib", "Anika", "John"];
+
+// Start your loop here...
+
+for ( let p of people){
+
+    if (p === 'Rakib') {
+        
+        console.log('found it');
+        break;
+    }
+}
