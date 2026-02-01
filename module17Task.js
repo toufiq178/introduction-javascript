@@ -76,17 +76,80 @@
 
 // Write a function called odd_even() which takes an integer value and tells whether this value is even or odd. If even return Even. If odd return Odd
 
-function oddEven(params) {
+// function oddEven(params) {
 
-    if (params % 2 === 0) {
+//     if (params % 2 === 0) {
         
-        return 'even';
+//         return 'even';
+//     }
+//     else{
+//         return 'odd';
+//     }
+// }
+
+// const odd_even = oddEven(8);
+// console.log(odd_even);
+
+
+
+// Write a function that takes three parameters. Add the first two numbers together, multiply the result by the third number, and return the final value.
+
+// function multiplies(p1, p2, p3) {
+    
+//     let multiply = p1 + p2 ;
+//     return multiply * p3 ;
+
+// }
+
+// const multiply = multiplies ( 5 , 6 , 3);
+// console.log(multiply);
+
+
+
+// // Take a number as input. If the number is a multiple of 5, return the number divided by 5. If it is not a multiple of 5, multiply it by 5 and return the result.
+
+
+// function multiplies (params) {
+    
+//     if (params % 5 === 0) {
+        
+//         return params / 5 ;
+//     }
+//     else{
+//         return params * 5 ;
+//     }
+// }
+
+// const multiply = multiplies (42);
+// console.log(multiply);
+
+
+// Write a function called make_range() which takes an array of integers and the size of that array. Find the difference between the maximum and the minimum value in that array and return it. 
+
+function make_range(arr) {
+    
+    
+    let min = arr[0] ;
+    let max = arr [0];
+
+    for(let number of arr){
+
+       
+
+        if (max <number) {
+            
+            max = number;
+
+        }
+        if(min > number){
+
+            min = number;
+        }
     }
-    else{
-        return 'odd';
-    }
+    return max - min
+    
 }
 
-const odd_even = oddEven(8);
-console.log(odd_even);
-
+const arr = [2, 4, 9, 3, 7, 8, 1, 6];
+const diff = make_range(arr);
+console.log(diff);
