@@ -198,40 +198,40 @@
 // console.log(sq);
 
 
-function evenNumbers(numbers) {
+// function evenNumbers(numbers) {
     
-    let eNumbers =[];
-    for(let number of numbers){
+//     let eNumbers =[];
+//     for(let number of numbers){
 
-        if (number % 2 === 0) {
+//         if (number % 2 === 0) {
             
-            eNumbers.push(number);
-        }
-    }
-    return eNumbers ;
-}
+//             eNumbers.push(number);
+//         }
+//     }
+//     return eNumbers ;
+// }
 
-// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-// const even = evenNumbers(numbers);
-// console.log('even numbers' , even);
+// // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// // const even = evenNumbers(numbers);
+// // console.log('even numbers' , even);
 
 
-function sumOfEven(numbers) {
+// function sumOfEven(numbers) {
     
-    let sum = 0
-    for( let number of numbers){
+//     let sum = 0
+//     for( let number of numbers){
 
-        if (number % 2 === 0) {
+//         if (number % 2 === 0) {
             
-           sum = sum + number
+//            sum = sum + number
            
 
-        }
-    }
-    return sum;
-}
+//         }
+//     }
+//     return sum;
+// }
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const evens = sumOfEven(numbers);
-console.log(evens);
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const evens = sumOfEven(numbers);
+// console.log(evens);
 
