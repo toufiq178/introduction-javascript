@@ -40,3 +40,39 @@
 // // console.log(result);
 // const max = Math.max(45, 354,63,63,343,622,5353,633343,5333333);
 // console.log(max);
+// function maxHeights(height) {
+    
+//     let mHeight = height[0] ;
+//     for( let mh of height){
+
+//         if (mh > mHeight) {
+            
+//             mHeight = mh;
+            
+//         }
+//     }
+//     return mHeight;
+    
+// }
+
+// const heights = [65, 68, 70, 69,75,73, 71];
+// const result = maxHeights(heights);
+// console.log(result);
+
+function minNumber( numbers) {
+    
+    let minNumber =numbers[0];
+
+    for(let num of numbers) {
+
+        if (num < minNumber) {
+            
+            minNumber = num;
+        }
+    }
+    return minNumber ;
+}
+
+const height = [ 56, 63, 57, 62, 70, 66, 69, 55, 50, 61];
+const minHeight = minNumber(height);
+console.log(minHeight);
