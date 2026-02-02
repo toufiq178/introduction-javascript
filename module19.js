@@ -59,20 +59,147 @@
 // const result = maxHeights(heights);
 // console.log(result);
 
-function minNumber( numbers) {
+// function minNumber( numbers) {
     
-    let minNumber =numbers[0];
+//     let minNumber =numbers[0];
 
-    for(let num of numbers) {
+//     for(let num of numbers) {
 
-        if (num < minNumber) {
+//         if (num < minNumber) {
             
-            minNumber = num;
-        }
-    }
-    return minNumber ;
-}
+//             minNumber = num;
+//         }
+//     }
+//     return minNumber ;
+// }
 
-const height = [ 56, 63, 57, 62, 70, 66, 69, 55, 50, 61];
-const minHeight = minNumber(height);
-console.log(minHeight);
+// const height = [ 56, 63, 57, 62, 70, 66, 69, 55, 50, 61];
+// const minHeight = minNumber(height);
+// console.log(minHeight);
+
+
+// function totalPrice(shirt , pant , shoe) {
+    
+//     const shirtPrice = 500 ;
+//     const pantPrice = 300 ;
+//     const shoePrice = 900 ;
+
+//     const shirtPriceTotal = shirtPrice * shirt ;
+//     const pantPriceTotal = pantPrice * pant ;
+//     const shoePriceTotal = shoePrice * shoe ;
+    
+//     const totalPrice = shirtPriceTotal + pantPriceTotal + shoePriceTotal ;
+
+//     return totalPrice ;
+// }
+
+// const price = totalPrice ( 1 , 1, 0);
+// console.log(price);
+
+
+// const phones = [
+
+//     {name : 'samsung' , price : 40000 , } ,
+//     {name : 'oppo' , price : 2000 , } ,
+//     {name : 'redmi' , price : 1113000 , } ,
+//     {name : 'iphone' , price : 140000 , } ,
+// ];
+
+// function highPricePhone(ph) {
+    
+//     let premiumPhone = ph[0];
+//     for(let p of ph){
+
+//         if (p.price > premiumPhone.price) {
+            
+//             premiumPhone = p;
+//         }
+//     }
+//     return premiumPhone ;
+
+// }
+// const result = highPricePhone(phones);
+// console.log(result);
+
+
+// function cheapest(items) {
+    
+//     let phone = items[0];
+
+//     for(let it of items){
+
+//         if (it.price < phone.price) {
+            
+//             phone = it
+//         }
+//     }
+//     return phone;
+// }
+//  const result = cheapest(phones);
+//  console.log(result);
+ 
+// const dress = [
+
+//     {name : 'shirt',price : 300 , quantity : 2} ,
+//     {name : 'pant', price : 500 , quantity : 3 } ,
+//     {name : 'shoe', price : 800 , quantity : 2 } ,
+//     {name : 'sunglass', price : 100 , quantity : 1 } ,
+// ];
+
+// function totalAmount(dress) {
+    
+//     let amount = 0 ;
+//     for(const d of dress){
+//         amount = amount + d.price * d.quantity ;
+//     }
+//     return amount;
+// }
+// const totalPrice = totalAmount(dress);
+// console.log(totalPrice);
+
+// function discount(quantity) {
+    
+//     if (quantity <= 100) {
+//         const total = quantity * 100 ;
+//         return total;
+
+//     }else if (quantity <= 200) {
+//         const total = quantity * 90 ;
+//         return total ;
+//     }else{
+//         const total = quantity * 70;
+//         return total ;
+//     }
+// }
+
+// const total = discount(110);
+// console.log(total);
+
+function discountLayered(quantity) {
+    const first100Price = 100 ;
+    const second200Price = 90 ;
+    const above200Price = 70 ;
+
+    if( quantity <= 100){
+        const total = quantity * first100Price ;
+        return total ; 
+
+    }else if (quantity <=200) {
+        const first100 = 100 * first100Price ;
+        const remainingQuantity = quantity - 100 ;
+        const remainingTotal = remainingQuantity * second200Price ;
+        const total = first100 + remainingTotal ;
+        return total ;
+
+    }else{
+        const first100 = 100 * first100Price ;
+        const second100 = 100 * second200Price;
+        const remainingQuantity= quantity - 200 ;
+        const remainingTotal = remainingQuantity * above200Price ;
+        const total = first100 + second100 + remainingTotal ;
+        return total ;
+
+    }
+}
+const q = discountLayered(300);
+console.log(q);
