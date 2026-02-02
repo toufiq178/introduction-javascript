@@ -175,31 +175,128 @@
 // const total = discount(110);
 // console.log(total);
 
-function discountLayered(quantity) {
-    const first100Price = 100 ;
-    const second200Price = 90 ;
-    const above200Price = 70 ;
+// function discountLayered(quantity) {
+//     const first100Price = 100 ;
+//     const second200Price = 90 ;
+//     const above200Price = 70 ;
 
-    if( quantity <= 100){
-        const total = quantity * first100Price ;
-        return total ; 
+//     if( quantity <= 100){
+//         const total = quantity * first100Price ;
+//         return total ; 
 
-    }else if (quantity <=200) {
-        const first100 = 100 * first100Price ;
-        const remainingQuantity = quantity - 100 ;
-        const remainingTotal = remainingQuantity * second200Price ;
-        const total = first100 + remainingTotal ;
-        return total ;
+//     }else if (quantity <=200) {
+//         const first100 = 100 * first100Price ;
+//         const remainingQuantity = quantity - 100 ;
+//         const remainingTotal = remainingQuantity * second200Price ;
+//         const total = first100 + remainingTotal ;
+//         return total ;
 
-    }else{
-        const first100 = 100 * first100Price ;
-        const second100 = 100 * second200Price;
-        const remainingQuantity= quantity - 200 ;
-        const remainingTotal = remainingQuantity * above200Price ;
-        const total = first100 + second100 + remainingTotal ;
-        return total ;
+//     }else{
+//         const first100 = 100 * first100Price ;
+//         const second100 = 100 * second200Price;
+//         const remainingQuantity= quantity - 200 ;
+//         const remainingTotal = remainingQuantity * above200Price ;
+//         const total = first100 + second100 + remainingTotal ;
+//         return total ;
 
+//     }
+// }
+// const q = discountLayered(300);
+// console.log(q);
+
+
+// function add( n1 , n2) {
+    
+//     return n1 + n2 ;
+// }
+// function subtract(n1 , n2) {
+//     return n1 - n2 ;
+// }
+// function multiply (n1, n2){
+//     return n1 * n2 ;
+// }
+// function divide(n1, n2) {
+//     return n1 / n2 ;
+// }
+
+// function calculator( a , b , operation) {
+//     if (operation === 'add') {
+//         return add(a , b);
+
+//     } else if (operation === 'subtract') {
+//         return subtract(a,b);
+
+//     }else if (operation === 'multiply') {
+//         return multiply(a , b);
+
+//     }else if (operation === 'divide') {
+//         return divide(a ,b);
+        
+//     }else{
+//         return " please use 'add', 'subtract', 'multiply', 'divide'"
+//     }
+// }
+
+// const operation =calculator(4 , 5 , 'subtract');
+// console.log(operation);
+
+
+
+function add( number1 , number2) {
+
+    if (typeof number1 !== 'number' || typeof number2 !== 'number') {
+        return 'Please provide a number'
     }
+    const result = number1 + number2 ;
+    return result ;
 }
-const q = discountLayered(300);
-console.log(q);
+
+const r = add(9 , 4);
+console.log(r);
+
+function fullName(first , second) {
+    if (typeof first !== 'string') {
+        return 'The first name should be a string'
+
+    }else if (typeof second !== 'string') {
+        return 'The last name should be a string '
+    }
+    const fname = first + ' ' + second ;
+    return fname ;
+
+}
+
+const nm = fullName ('akkas','ali');
+console.log(nm);
+
+function object (value){
+
+    if(typeof value !== 'object'){
+
+        return "The value should be an object"
+    }
+    
+    const price = value.price ;
+    return price
+
+}
+
+const obb = object({product: 'shirt' , price: 300, isNew: true  });
+// const obb = object (2)
+console.log(obb);
+
+
+function array(numbers) {
+    
+    if(Array.isArray(numbers) !== true){
+       return 'Please provide an array'
+    }
+    
+    const n2 = numbers[4];
+    // console.log(n2);
+    return n2;
+}
+
+// const n = array([1,3,4,5,6,3]);
+const n = array(0 ,3)
+console.log(n);
