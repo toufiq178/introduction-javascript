@@ -441,3 +441,55 @@ function calculateTotalCost(quantity) {
 
 const quantity = calculateTotalCost(250);
 console.log(quantity);
+
+
+// Write a function that finds the student with the highest total marks and returns their name. 
+const students = [
+    { name: "Alice", physics: 85, chemistry: 90, math: 95 },
+    { name: "Bob", physics: 80, chemistry: 88, math: 82 },
+    { name: "Charlie", physics: 92, chemistry: 85, math: 98 }
+];
+
+
+function highestMark(students) {
+    
+    let highest = 0
+    let nm = '';
+    for(const student of students ){
+
+        const totalMark = student.physics + student.chemistry + student.math ;
+        if (highest  < totalMark) {
+            
+            highest = totalMark ;
+            nm = student.name ;
+        }
+    }
+    return nm + ': '+ highest;
+}
+
+const studentName = highestMark(students);
+console.log(studentName);
+ 
+// Write a function that returns an array of names of products that belong to the "Electronics" category AND have a "New" condition.
+const products = [
+    { name: "Laptop", category: "Electronics", price: 45000, condition: "New" },
+    { name: "Phone", category: "Electronics", price: 25000, condition: "Used" },
+    { name: "Shirt", category: "Clothing", price: 1200, condition: "New" },
+    { name: "Watch", category: "Electronics", price: 5000, condition: "New" }
+];
+
+
+function newProduct(products) {
+    
+    let newPd= [];
+    for(const product of products){
+
+        if (product.condition === "New" && product.category === "Electronics") {
+            
+            newPd.push(product.name);
+        }
+    }
+    return newPd ;
+}
+const newPdt = newProduct(products);
+console.log(newPdt);
