@@ -242,61 +242,123 @@
 
 
 
-function add( number1 , number2) {
+// function add( number1 , number2) {
 
-    if (typeof number1 !== 'number' || typeof number2 !== 'number') {
-        return 'Please provide a number'
-    }
-    const result = number1 + number2 ;
-    return result ;
-}
+//     if (typeof number1 !== 'number' || typeof number2 !== 'number') {
+//         return 'Please provide a number'
+//     }
+//     const result = number1 + number2 ;
+//     return result ;
+// }
 
-const r = add(9 , 4);
-console.log(r);
+// const r = add(9 , 4);
+// console.log(r);
 
-function fullName(first , second) {
-    if (typeof first !== 'string') {
-        return 'The first name should be a string'
+// function fullName(first , second) {
+//     if (typeof first !== 'string') {
+//         return 'The first name should be a string'
 
-    }else if (typeof second !== 'string') {
-        return 'The last name should be a string '
-    }
-    const fname = first + ' ' + second ;
-    return fname ;
+//     }else if (typeof second !== 'string') {
+//         return 'The last name should be a string '
+//     }
+//     const fname = first + ' ' + second ;
+//     return fname ;
 
-}
+// }
 
-const nm = fullName ('akkas','ali');
-console.log(nm);
+// const nm = fullName ('akkas','ali');
+// console.log(nm);
 
-function object (value){
+// function object (value){
 
-    if(typeof value !== 'object'){
+//     if(typeof value !== 'object'){
 
-        return "The value should be an object"
-    }
+//         return "The value should be an object"
+//     }
     
-    const price = value.price ;
-    return price
+//     const price = value.price ;
+//     return price
 
-}
+// }
 
-const obb = object({product: 'shirt' , price: 300, isNew: true  });
-// const obb = object (2)
-console.log(obb);
+// const obb = object({product: 'shirt' , price: 300, isNew: true  });
+// // const obb = object (2)
+// console.log(obb);
 
 
-function array(numbers) {
+// function array(numbers) {
     
-    if(Array.isArray(numbers) !== true){
-       return 'Please provide an array'
-    }
+//     if(Array.isArray(numbers) !== true){
+//        return 'Please provide an array'
+//     }
     
-    const n2 = numbers[4];
-    // console.log(n2);
-    return n2;
-}
+//     const n2 = numbers[4];
+//     // console.log(n2);
+//     return n2;
+// }
 
-// const n = array([1,3,4,5,6,3]);
-const n = array(0 ,3)
-console.log(n);
+// // const n = array([1,3,4,5,6,3]);
+// const n = array(0 ,3)
+// console.log(n);
+
+// // smallest number find 
+// const heights2 = [167, 190, 120, 165, 137];
+
+// function findSmallest(nbr) {
+    
+//     let n = nbr[0];
+//     for( const num of nbr){
+
+//         if (num < n ) {
+            
+//             n = num;
+//         }
+//     }
+//     return n ;
+// }
+
+// const numbers = findSmallest(heights2);
+// console.log(numbers);
+
+
+
+// const heights2 = ['rahim', 'robin', 'ri', 'ron', 'rashed'];
+
+// function smallName(names) {
+    
+//     let smName = names[0];
+//     for ( const nm of names){
+
+//         if (nm.length < smName.length) {
+            
+//             smName = nm ;
+//         }
+//     }
+//     return smName ;
+// }
+
+// const names = smallName(heights2);
+// console.log(names);
+
+
+// function calculateElectronicsBudget(lap , tab , mbl ) {
+    
+//     const laptop = 35000 ;
+//     const tablet = 15000 ;
+//     const mobile = 20000 ;
+
+//     if (typeof lap !== 'number' || typeof tab !== 'number' ||typeof mbl !== 'number') {
+//         return "please provide a number";
+//     }
+//     const laptopPrice = laptop * lap ;
+//     const tabletPrice = tablet * tab ;
+//     const mobilePrice = mobile * mbl ;
+
+//     const totalMoneyRequired = laptopPrice + tabletPrice + mobilePrice ;
+//     return totalMoneyRequired ;
+
+
+// }
+
+// const totalElectronics = calculateElectronicsBudget(1 , "4" , 0);
+// console.log(totalElectronics);
