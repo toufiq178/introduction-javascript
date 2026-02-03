@@ -410,86 +410,147 @@
 
 // Write a function calculateTotalCost(quantity) that takes the number of items and returns the total price based on these layers.
 
-function calculateTotalCost(quantity) {
+// function calculateTotalCost(quantity) {
     
-    const first100Price = 100 ;
-    const second100Price = 90 ;
-    const above200Price = 70 ;
+//     const first100Price = 100 ;
+//     const second100Price = 90 ;
+//     const above200Price = 70 ;
 
-    if (quantity <= 100) {
+//     if (quantity <= 100) {
         
-        const first100Total = quantity * first100Price ;
-        return 'You buy under 100: ' + first100Total ;
+//         const first100Total = quantity * first100Price ;
+//         return 'You buy under 100: ' + first100Total ;
 
-    } else if (quantity <= 200 ) {
+//     } else if (quantity <= 200 ) {
         
-        const first100Total = 100 * first100Price ;
-        const remainingQuantity = quantity - 100 ;
-        const remainingTotal =remainingQuantity * second100Price ;
-        const second100Total = first100Total + remainingTotal ;
-        return 'You buy above 100: ' + second100Total ;
+//         const first100Total = 100 * first100Price ;
+//         const remainingQuantity = quantity - 100 ;
+//         const remainingTotal =remainingQuantity * second100Price ;
+//         const second100Total = first100Total + remainingTotal ;
+//         return 'You buy above 100: ' + second100Total ;
 
-    } else if (quantity > 200) {
-        const first100Total = 100 * first100Price ;
-        const second100Total = 100 * second100Price ;
-        const remainingQuantity = quantity - 200 ;
-        const remainingTotal = remainingQuantity * above200Price ;
-        const above200Total = first100Total + second100Total + remainingTotal ;
-        return 'You buy above 200: ' + above200Total; 
-    }
-}
+//     } else if (quantity > 200) {
+//         const first100Total = 100 * first100Price ;
+//         const second100Total = 100 * second100Price ;
+//         const remainingQuantity = quantity - 200 ;
+//         const remainingTotal = remainingQuantity * above200Price ;
+//         const above200Total = first100Total + second100Total + remainingTotal ;
+//         return 'You buy above 200: ' + above200Total; 
+//     }
+// }
 
-const quantity = calculateTotalCost(250);
-console.log(quantity);
-
-
-// Write a function that finds the student with the highest total marks and returns their name. 
-const students = [
-    { name: "Alice", physics: 85, chemistry: 90, math: 95 },
-    { name: "Bob", physics: 80, chemistry: 88, math: 82 },
-    { name: "Charlie", physics: 92, chemistry: 85, math: 98 }
-];
+// const quantity = calculateTotalCost(250);
+// console.log(quantity);
 
 
-function highestMark(students) {
+// // Write a function that finds the student with the highest total marks and returns their name. 
+// const students = [
+//     { name: "Alice", physics: 85, chemistry: 90, math: 95 },
+//     { name: "Bob", physics: 80, chemistry: 88, math: 82 },
+//     { name: "Charlie", physics: 92, chemistry: 85, math: 98 }
+// ];
+
+
+// function highestMark(students) {
     
-    let highest = 0
-    let nm = '';
-    for(const student of students ){
+//     let highest = 0
+//     let nm = '';
+//     for(const student of students ){
 
-        const totalMark = student.physics + student.chemistry + student.math ;
-        if (highest  < totalMark) {
+//         const totalMark = student.physics + student.chemistry + student.math ;
+//         if (highest  < totalMark) {
             
-            highest = totalMark ;
-            nm = student.name ;
-        }
-    }
-    return nm + ': '+ highest;
-}
+//             highest = totalMark ;
+//             nm = student.name ;
+//         }
+//     }
+//     return nm + ': '+ highest;
+// }
 
-const studentName = highestMark(students);
-console.log(studentName);
+// const studentName = highestMark(students);
+// console.log(studentName);
  
-// Write a function that returns an array of names of products that belong to the "Electronics" category AND have a "New" condition.
-const products = [
-    { name: "Laptop", category: "Electronics", price: 45000, condition: "New" },
-    { name: "Phone", category: "Electronics", price: 25000, condition: "Used" },
-    { name: "Shirt", category: "Clothing", price: 1200, condition: "New" },
-    { name: "Watch", category: "Electronics", price: 5000, condition: "New" }
-];
+// // Write a function that returns an array of names of products that belong to the "Electronics" category AND have a "New" condition.
+// const products = [
+//     { name: "Laptop", category: "Electronics", price: 45000, condition: "New" },
+//     { name: "Phone", category: "Electronics", price: 25000, condition: "Used" },
+//     { name: "Shirt", category: "Clothing", price: 1200, condition: "New" },
+//     { name: "Watch", category: "Electronics", price: 5000, condition: "New" }
+// ];
 
 
-function newProduct(products) {
+// function newProduct(products) {
     
-    let newPd= [];
-    for(const product of products){
+//     let newPd= [];
+//     for(const product of products){
 
-        if (product.condition === "New" && product.category === "Electronics") {
+//         if (product.condition === "New" && product.category === "Electronics") {
             
-            newPd.push(product.name);
-        }
+//             newPd.push(product.name);
+//         }
+//     }
+//     return newPd ;
+// }
+// const newPdt = newProduct(products);
+// console.log(newPdt);
+
+
+// Write a function that takes an array of strings and creates a new string using only the first letter of each word.
+
+// const array = ['Keep', 'It', 'Simple', 'Stupid'] ;
+
+// function firstLatterFind(array) {
+    
+//     let secret = ''
+//     for(const arr of array){
+
+//         if(arr[0]){
+
+//             secret = secret + arr[0] ;
+            
+//         }
+//     }
+//     return secret;
+// }
+
+// const secretMsg = firstLatterFind(array);
+// console.log(secretMsg);
+
+
+// Write a function calculateBill(units) that returns the final amount to be paid.
+
+function calculateBill(units) {
+    
+    const first50Unit = 5 ;
+    const second100Unit = 7 ;
+    const above150Unit = 10 ;
+    
+    if (units <= 50) {
+        
+        const firstBillTotal = first50Unit * units ;
+        const result = firstBillTotal + (firstBillTotal * 0.05);
+        return result;
+
+    }else if (units <= 150) {
+        
+        const firstBillTotal = 50 * first50Unit ;
+        const remainingUnit = units - 50 ;
+        const remainingBill = remainingUnit * second100Unit ;
+        const secondBillTotal =firstBillTotal + remainingBill ;
+        const result = secondBillTotal + (secondBillTotal * 0.05);
+        return result;
+
+    }else if (units > 150 ) {
+        
+        const firstBillTotal = 50 * first50Unit ;
+        const second100Total = 100 * second100Unit ;
+        const remainingUnit = units - 150 ;
+        const remainingBill = remainingUnit * above150Unit ;
+        const totalBill = firstBillTotal + second100Total + remainingBill ;
+        const result = totalBill + (totalBill * 0.05);
+        return result;
     }
-    return newPd ;
 }
-const newPdt = newProduct(products);
-console.log(newPdt);
+
+const unit = calculateBill(40);
+console.log(unit);
