@@ -362,3 +362,82 @@
 
 // const totalElectronics = calculateElectronicsBudget(1 , "4" , 0);
 // console.log(totalElectronics);
+
+// const phones = [
+//     { model: "PhoneA", brand: "Iphone", price: 95000 },
+//     { model: "PhoneB", brand: "Samsung", price: 40000 },
+//     { model: "PhoneC", brand: "Oppo", price: 26000 },
+//     { model: "PhoneD", brand: "Nokia", price: 35000 },
+//     { model: "PhoneE", brand: "Iphone", price: 105000 },
+//     { model: "PhoneF", brand: "HTC", price: 48000 },
+// ];
+
+// function findAveragePhonePrice(phones) {
+    
+//     let pp = 0 ; 
+//     for(const phone of phones ){
+        
+//         pp = pp + phone.price ;
+        
+//     }
+    
+//     return pp / phones.length;
+// }
+
+// const avg = findAveragePhonePrice(phones);
+// console.log(avg);
+
+// For each employee their current salary is calculated by multiplying yearly increment with experience then adding the result to the starting salary. Now calculate is the total salary has to be provided by the company in a month.
+// const employees = [
+//     { name: "shahin", experience: 5, starting: 20000, increment: 5000 },
+//     { name: "shihab", experience: 3, starting: 15000, increment: 7000 },
+//     { name: "shikot", experience: 9, starting: 30000, increment: 1000 },
+//     { name: "shohel", experience: 0, starting: 29000, increment: 4000 },
+// ]; 
+
+// function totalSalary(employees) {
+    
+//     let total = 0
+//     for(const em of employees){
+
+//         const currentSalary = em.experience * em.increment + em.starting ;
+//         total = total + currentSalary ; 
+//     }
+//     return total ;
+// }
+// const total = totalSalary(employees);
+// console.log(total);
+
+// Write a function calculateTotalCost(quantity) that takes the number of items and returns the total price based on these layers.
+
+function calculateTotalCost(quantity) {
+    
+    const first100Price = 100 ;
+    const second100Price = 90 ;
+    const above200Price = 70 ;
+
+    if (quantity <= 100) {
+        
+        const first100Total = quantity * first100Price ;
+        return 'You buy under 100: ' + first100Total ;
+
+    } else if (quantity <= 200 ) {
+        
+        const first100Total = 100 * first100Price ;
+        const remainingQuantity = quantity - 100 ;
+        const remainingTotal =remainingQuantity * second100Price ;
+        const second100Total = first100Total + remainingTotal ;
+        return 'You buy above 100: ' + second100Total ;
+
+    } else if (quantity > 200) {
+        const first100Total = 100 * first100Price ;
+        const second100Total = 100 * second100Price ;
+        const remainingQuantity = quantity - 200 ;
+        const remainingTotal = remainingQuantity * above200Price ;
+        const above200Total = first100Total + second100Total + remainingTotal ;
+        return 'You buy above 200: ' + above200Total; 
+    }
+}
+
+const quantity = calculateTotalCost(250);
+console.log(quantity);
