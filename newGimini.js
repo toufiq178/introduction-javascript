@@ -86,53 +86,147 @@
 
 
 
-function checkStockAndBill(prices, stock, shoppingList){
+// function checkStockAndBill(prices, stock, shoppingList){
 
-    let shoppingCount = {};
-    let total = 0 ;
-    let msg = 'All item available';
+//     let shoppingCount = {};
+//     let total = 0 ;
+//     let msg = 'All item available';
 
-    for ( let shopping of shoppingList){
-        console.log(shopping);
+//     for ( let shopping of shoppingList){
+//         console.log(shopping);
         
-        if (shoppingCount.hasOwnProperty(shopping)) {
+//         if (shoppingCount.hasOwnProperty(shopping)) {
             
-            shoppingCount[shopping] ++ ;
-        } else{
-            shoppingCount[shopping] = 1;
-        }
-    }
+//             shoppingCount[shopping] ++ ;
+//         } else{
+//             shoppingCount[shopping] = 1;
+//         }
+//     }
 
-    // console.log(shoppingCount);
+//     // console.log(shoppingCount);
 
-    for ( let item in shoppingCount){
+//     for ( let item in shoppingCount){
 
-        const available = shoppingCount[item];
-        const notAvailable = stock [item] || 0;
+//         const available = shoppingCount[item];
+//         const notAvailable = stock [item] || 0;
 
-        console.log(notAvailable , available);
+//         console.log(notAvailable , available);
         
-        if (notAvailable >= available) {
-             total = total + prices[item] * available ;
+//         if (notAvailable >= available) {
+//              total = total + prices[item] * available ;
              
+//         }else{
+
+//             total = total + prices[item] * notAvailable ;
+//             msg = 'item is not available'
+//         }
+        
+//     }
+//     return{
+//         total,
+//         msg
+//     }
+    
+// }
+
+
+// const prices = { pen: 10, book: 50, eraser: 5 } ;
+// const stock = { pen: 6, book: 89, eraser: 80 } ;
+// const shoppingList = ["pen", "pen", "pen", "book", "eraser"] ;
+// const totalPrice = checkStockAndBill(prices, stock, shoppingList);
+// console.log(totalPrice);
+
+
+
+// Calculate total bill and count how many times each item appears.
+
+// function groceryBill(prices, items) {
+    
+//     let itemCount = {};
+
+//     for(let item of items){
+        
+//         if (itemCount.hasOwnProperty(item)) {
+            
+//             itemCount[item]++ ;
+//         }else {
+//             itemCount[item] = 1 ;
+
+//         }
+//     }
+//     console.log(itemCount);
+    
+//     let total = 0 ;
+//     for ( let item in itemCount) {
+        
+//         let price = prices[item];
+//         console.log(price);
+//         let itemQuantity = itemCount[item];
+//         console.log(itemQuantity);
+//         total = total + price * itemQuantity ;
+//     }
+//     console.log(total);
+    
+//     return {
+//         total,
+//         itemCount
+//     }
+
+// }
+
+
+// const prices = { apple: 50, banana: 10, milk: 60 };
+// const items = ["apple", "banana", "apple", "milk", "banana", "banana"];
+// const total = groceryBill(prices, items);
+// console.log(total);
+
+
+// Calculate total price and quantity of each food item.
+
+function orderSummary(menu, orders) {
+
+    let orderCount = {};
+    for ( let order of orders){
+
+        if (orderCount.hasOwnProperty(order)) {
+            
+            orderCount[order] ++;
         }else{
 
-            total = total + prices[item] * notAvailable ;
-            msg = 'item is not available'
+            orderCount[order] = 1 ;
         }
+    }
+
+    let total = 0 ;
+
+    for ( let order in orderCount){
+
+        const price = menu[order];
+        const orderQuantity = orderCount [order];
+        total = total + price * orderQuantity ;
+    }
+
+    let discountApplied = false ;
+
+
+
+    if (total > 500) {
         
+        let dis = 10 ;
+        let discount = total - (dis * total / 100) ;
+        total = discount;
+        discountApplied = true ;
+    } 
+
+    return {
+        total ,
+        orderCount,
+        discountApplied, 
     }
-    return{
-        total,
-        msg
-    }
-    
 }
 
-
-const prices = { pen: 10, book: 50, eraser: 5 } ;
-const stock = { pen: 6, book: 89, eraser: 80 } ;
-const shoppingList = ["pen", "pen", "pen", "book", "eraser"] ;
-const totalPrice = checkStockAndBill(prices, stock, shoppingList);
-console.log(totalPrice);
+const menu = { burger: 120, pizza: 300, coke: 40 };
+const orders = ["burger", "pizza",  "coke", "coke"];
+const result = orderSummary(menu, orders);
+console.log(result);
 
