@@ -208,8 +208,6 @@ function orderSummary(menu, orders) {
 
     let discountApplied = false ;
 
-
-
     if (total > 500) {
         
         let dis = 10 ;
