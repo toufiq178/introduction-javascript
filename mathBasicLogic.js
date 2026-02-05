@@ -337,7 +337,7 @@
 // }
 
 
-//42
+//41
 // let str = 'bangladesh is a beautiful country';
 // let reverse = ''
 // for(let i of str){
@@ -345,7 +345,7 @@
 // }console.log(reverse);
 
 
-// 43
+// 42
 // const str = 'maiipoudam'
 // let reverse = str.split('').reverse().join('');
 // console.log(reverse);
@@ -357,7 +357,7 @@
 
 // -----------------------------------------------------------------
 
-// 44
+// 43
 // const studentInfo = {
 //     name: 'rofik',
 //     roll : 20 ,
@@ -365,7 +365,7 @@
 // }
 
 
-// 45
+// 44
 // const studentInfo = {
 //     name: 'rofik',
 //     roll : 20 ,
@@ -374,7 +374,7 @@
 // console.log(Object.keys(studentInfo));
 
 
-// 46
+// 45
 // const studentInfo = {
 //     name: 'rofik',
 //     roll : 20 ,
@@ -383,7 +383,7 @@
 // console.log(Object.values(studentInfo));
 
 
-// 47 , 48
+// 46, 47 
 // const studentInfo = {
 //    class : 'rofik',
 //     roll : 20 ,
@@ -398,3 +398,107 @@
 //     }
 // }console.log(got);
 
+// ----------------------------------------------------------------------------------------
+
+// 48
+// function sumTotal(n1 ,n2) {
+//     let sum = n1 + n2;
+//     return sum;
+// }
+// let sum = sumTotal(7,9);
+// console.log(sum);
+
+
+// 49
+// function even(n1) {
+//     if (n1 % 2 === 0) {
+//         console.log("even");
+//     }else{
+//         console.log('odd'); 
+//     }
+// }
+// even(8);
+
+
+// 50
+// function sumArr(arr){
+//     let total = 0 ;
+//     for(let sum of arr){
+//         total += sum
+//     }
+//     return total;
+// }
+// const arr = [1,4,2,3,5];
+// const sum = sumArr(arr);
+// console.log(sum);
+
+
+// 51 
+// function reverseStr ( str){
+//     let reverse = str.split('').reverse().join('');
+//     return reverse ;
+// }
+// const str = 'bangladesh';
+// const rev = reverseStr(str);
+// console.log(rev);
+
+
+// 52
+// function isLeapYear(Year) {
+//     let leap = false ;
+//     if (Year % 4 === 0 && Year % 100 !== 0 || Year % 400 === 0 ) {
+//         leap = true;
+//     }
+//     return leap ;
+// }
+// let leap = isLeapYear(2024);
+// console.log(leap);
+
+
+// 53
+// function largest(arr) {
+//     let largest = 0;
+//     for(let l of arr){
+//         if (largest < l) {
+//             largest = l;
+//         }
+//     }
+//     return largest ;
+// }
+// const arr = [1,4,2,6,7,4];
+// const lar = largest(arr)
+// console.log(lar);
+
+
+// 54
+// function inchToFeet(params) {
+//     let feet = (params / 12).toFixed(2);
+//     return feet ;
+// }
+// const feet = inchToFeet(68);
+// console.log(feet);
+
+
+// 55
+// function calculator(num1 , num2 , condition) {
+//     if (condition === 'add') {
+//         let sum = num1 + num2 ;
+//         return ("sum : " + sum )
+//     }else
+//     if (condition === 'subtract') {
+//         let sum = num1 - num2 ;
+//         return ("sum : " + sum )
+//     }else
+//     if (condition === 'multiply') {
+//         let sum = num1 * num2 ;
+//         return ("sum : " + sum )
+//     }else
+//     if (condition === 'divide') {
+//         let sum = num1 / num2 ;
+//         return ("sum : " + sum )
+//     }else{
+//         return 'please add condition'
+//     }
+// }
+// const calculation = calculator(12 , 10 , 'divide');
+// console.log(calculation);
