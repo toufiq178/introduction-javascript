@@ -502,3 +502,44 @@
 // }
 // const calculation = calculator(12 , 10 , 'divide');
 // console.log(calculation);
+
+
+// --------------------------------------------------------------------------
+
+
+// 56
+// const numbers = [1,2,3,4,5,6,7,8,9,10];
+// let total = 0 ;
+// for (let num of numbers){
+//     total+= num;
+// }
+// console.log(total / numbers.length);
+
+
+// 57
+// const arr = [1,1,1,1,1];
+// let unique = [];
+// for(let a of arr){
+//     if (unique.includes(a)=== false) {
+//         unique.push(a);
+//     }
+// }
+// console.log(unique);
+
+
+// 58 
+// const student = {
+//     name : 'rafi',
+//     roll : 22 ,
+//     result : {
+//         math : 100,
+//         english: 300,
+//         science : {
+//             biology : 60 ,
+//             chemistry : 80,
+//             physis : 99 ,
+//         }
+//     }
+// }
+// const physis = student.result.science.physis ;
+// console.log(physis);
