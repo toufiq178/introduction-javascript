@@ -354,3 +354,47 @@
 // }else{
 //     console.log(false);
 // }
+
+// -----------------------------------------------------------------
+
+// 44
+// const studentInfo = {
+//     name: 'rofik',
+//     roll : 20 ,
+//     class: 10,
+// }
+
+
+// 45
+// const studentInfo = {
+//     name: 'rofik',
+//     roll : 20 ,
+//     class: 10,
+// }
+// console.log(Object.keys(studentInfo));
+
+
+// 46
+// const studentInfo = {
+//     name: 'rofik',
+//     roll : 20 ,
+//     class: 10,
+// }
+// console.log(Object.values(studentInfo));
+
+
+// 47 , 48
+// const studentInfo = {
+//    class : 'rofik',
+//     roll : 20 ,
+//     name : 10,
+// }
+// console.log(studentInfo.hasOwnProperty('class'));
+// let got = false ;
+// for(let obj in studentInfo){
+    
+//     if (obj === 'name') {
+//         got = true;
+//     }
+// }console.log(got);
+
