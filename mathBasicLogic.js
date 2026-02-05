@@ -69,6 +69,7 @@
 //     console.log('no not divisible');
 // }
 
+// -----------------------------------------------------------
 
 // 9
 // var nm = 122 ;
@@ -102,3 +103,77 @@
 // let num1 = 1 ;
 // let num2 = 'dsf';
 // console.log(num1 * num2);
+
+// -----------------------------------------------------------
+
+// 14
+// const age = 19 ;
+// if (age >= 18) {
+//     console.log('vote dite parbe');
+// }else{
+//     console.log('parbe na vote dite');  
+// }
+
+
+// 15 
+// const number = 100 ;
+// if (number > 100) {
+//     console.log('number bigger than 100');    
+// }else if (number === 100) {
+//     console.log('number equal to 100'); 
+// }else{
+//     console.log('number smaller than 100');    
+// }
+
+
+// 16
+// const mark = 44 ;
+// if (mark >= 80) {
+//     console.log('you got a+');    
+// }else if (mark >= 70) {
+//     console.log('you got a');   
+// }else if (mark >= 60) {
+//     console.log('you got b');   
+// }else if (mark >= 50) {
+//     console.log('you got c');   
+// }else if (mark >= 40) {
+//     console.log('you got d');   
+// }else if (mark < 40) {
+//     console.log('you are fail');    
+// }
+
+
+// 17
+// let year = 2100;
+// if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0 ) {
+//     console.log('yes this was leap Year');
+// }else{
+//     console.log('no is not leap year');   
+// }
+
+
+// 18 
+// let num1 = [32,55,23];
+// let highest = -Infinity ;
+// for(let n of num1){    
+//     if (highest < n) {      
+//         highest = n;
+//     }
+// }
+// console.log(highest);
+
+
+// 19
+// const gmail = 'gmaisl';
+// const password = 'password';
+// if (gmail === 'gmail'&& password === 'password') {
+//     console.log('login');   
+// }else{
+//     console.log('try again');    
+// }
+
+
+// 20
+// const number = 21 ;
+// number % 2 === 0 ? console.log('even') : console.log('odd');
+
