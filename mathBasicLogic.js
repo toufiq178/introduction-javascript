@@ -231,3 +231,126 @@
 //         break
 //     }
 // }
+
+// -------------------------------------------------------------------------------
+
+// 28
+// const names= ['rofik', 'sofik', 'jofik', 'ofik'];
+// console.log(names);
+
+
+// 29
+// const numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// console.log(numbers.length);
+
+
+// // 30
+// const numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// console.log(numbers.shift(numbers), numbers.unshift(numbers));
+
+
+// 31
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let total = 0 ;
+// for(let num of numbers){
+//     total = total + num ;
+// }console.log(total);
+
+
+// 32
+// const arr = [12,31,56,424,99,81];
+// let even = [];
+// for(let a of arr){
+//     if (a % 2 === 0) {
+//         even.push(a);
+//     }
+// }console.log(even);
+
+
+// 33
+// const arr = [12,31,56,424,99,81];
+// let largest = -Infinity ;
+// for(let a of arr){
+//     if(largest < a){
+
+//         largest = a;
+//     }
+// }console.log(largest);
+
+
+// 34
+// const arr = [12,31,56,424,99,81];
+// let reverse = [];
+// for(let a of arr){
+//    reverse.unshift(a); 
+// }console.log(reverse);
+
+
+// 35
+// let numbers = [10, 5, 100, 20, 1];
+// numbers.sort((a,b) => a - b);
+// console.log(numbers);
+
+
+
+// 36
+// const arr = [12,22,56,22,99,22];
+// let newArr = [];
+// for( let a of arr){
+//     if (newArr.includes(a)===false) {
+//         newArr.push(a)
+//     }
+// }console.log(newArr);
+
+// -------------------------------------------------
+
+//37
+// let str = 'bangladesh is a beautiful country';
+// console.log(str.length);
+
+
+// 38
+// let str = 'bangladesh is a beautiful country';
+// console.log(str.toUpperCase());
+
+
+// 39
+// let str = 'bangladesh is a beautiful country';
+// let split = str.split(' ');
+// console.log(split);
+// for(let s of split){
+//     // console.log(s);
+//     if (s == 'bangladesh') {
+//         console.log(true);
+//     }else{
+//         console.log(false);
+//     }
+// }
+
+
+// 40
+// let str = 'bangladesh is a beautiful country';
+// let split = str.split(' ');
+// console.log(split);
+// for(let i of split){
+//     console.log(i);
+// }
+
+
+//42
+// let str = 'bangladesh is a beautiful country';
+// let reverse = ''
+// for(let i of str){
+//     reverse = i + reverse ;
+// }console.log(reverse);
+
+
+// 43
+// const str = 'maiipoudam'
+// let reverse = str.split('').reverse().join('');
+// console.log(reverse);
+// if (str === reverse) {
+//     console.log(true);
+// }else{
+//     console.log(false);
+// }
