@@ -177,3 +177,57 @@
 // const number = 21 ;
 // number % 2 === 0 ? console.log('even') : console.log('odd');
 
+// ---------------------------------------------------------------------------------
+
+// // 21 
+// for (let i = 1; i <= 10 ; i++) {
+//     console.log(i); 
+// }
+
+
+// 22
+// let even = [];
+// for (let i = 1; i <50 ; i++) {
+//     if (i % 2 === 0) {
+//         even.push(i);
+//     }
+// }console.log(even);
+
+
+// 23
+// for (let i = 10; i > 0; i--) {
+//     console.log(i);
+// }
+
+
+// 24
+// let num = 3 ;
+// for (let i = 1; i <=10; i++) {  
+//     let result = num * i ;
+//     console.log(num + ' x ' + i + ' = ' +result);
+// }
+
+
+// 25
+// let divideBy3 = [];
+// for (let i = 1; i <=100; i++) {
+//     if (i % 3 === 0) {
+//         divideBy3.push(i);
+//     }
+// }console.log(divideBy3);
+
+
+// 26
+// let sum = 0;
+// for (let i = 1; i <=10; i++) {
+//     sum += i ;
+// }console.log(sum);
+
+
+// 27
+// for (let i = 0; i < 100; i++) {
+//    if (i === 10) {
+//         console.log(i);
+//         break
+//     }
+// }
