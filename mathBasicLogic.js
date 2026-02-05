@@ -68,3 +68,37 @@
 // }else{
 //     console.log('no not divisible');
 // }
+
+
+// 9
+// var nm = 122 ;
+// var nm = 100 ;
+// console.log(nm);
+// let num = 99 ;
+// num = 22 ;
+// console.log(num);
+// const n = 55 ;
+// console.log(n);
+
+
+// // 10
+// let num = 20 ;
+// let nam = 'alif';
+// let isMarried = false ;
+// console.log(typeof num +' num', typeof nam + 'name' , typeof isMarried + 'married');
+
+
+// 11
+// let number = parseInt('12')
+// console.log(number);
+
+
+// 12 
+// let number = 12 ;
+// console.log(number.toString());
+
+
+// 13
+// let num1 = 1 ;
+// let num2 = 'dsf';
+// console.log(num1 * num2);
