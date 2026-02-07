@@ -543,3 +543,21 @@
 // }
 // const physis = student.result.science.physis ;
 // console.log(physis);
+
+
+// 59
+function totalSum( number) {
+    
+    let n1 = 20 ;
+    let n2 = 10 ;
+    console.log(sum(n1 , n2));
+    
+
+    function sum(n1 , n2 ) {
+        
+        let sum = n1 + n2;
+
+        return sum ;
+    }
+}
+
