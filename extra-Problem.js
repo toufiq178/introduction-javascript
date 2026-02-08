@@ -97,24 +97,24 @@
 
 // problem 1
 
-// function groceryDiscount(price, discount) {
-//    // your code here
+function groceryDiscount(price, discount) {
+   // your code here
 
-//    if ( !(typeof price ==='number' && typeof discount ==='number')) {
-//         return 'Invalid';
+   if ( !(typeof price ==='number' && typeof discount ==='number')) {
+        return 'Invalid';
 
-//     }else if (price < 0  ||  discount < 0 || discount >= 100) {
+    }else if (price < 0  ||  discount < 0 || discount > 100) {
         
-//         return 'Invalid';
-//     }
+        return 'Invalid';
+    }
 
-//     const newPrice = price - (price * discount / 100 ).toFixed(2);
-//     return newPrice ;
+    const newPrice = price - (price * discount / 100 );
+    return newPrice.toFixed(2) ;
 
-// }
+}
 
-// const finalPrice = groceryDiscount(1000, 100);
-// console.log(finalPrice);
+const finalPrice = groceryDiscount(1000, 100);
+console.log(finalPrice);
 
 
 
@@ -136,18 +136,57 @@ function validMobile(mobile) {
    const num = mobile.split('');
 
    for(let n of num){
-    if (! (n.includes() >= 0 && n.includes() <= 9)) {
+    if (n < 0 || n > 9) {
         
-        return 'invalid'
-    }else{
-
-        return true ;
+        return false'
+    
     }
-   }
    
 
 }
 
 const number = validMobile(["01712345678"]);
 console.log(number);
+
+
+
+
+//problem 3
+function studentGrade(student) {
+   // your code here
+   
+    if (!(student.hasOwnProperty('name') === true && student.hasOwnProperty('marks') === true )) {
+       return 'Invalid';
+
+    }
+    
+    if (student.marks < 0 || student.marks > 100) {
+        return 'Invalid';
+ 
+    }else if (student.marks >= 90 && student.marks <= 100 ) {
+        return 'A';
+
+    } else if (student.marks >= 80 && student.marks <= 89 ) {
+        return 'B';
+        
+    } else if (student.marks >= 70 && student.marks <= 79 ) {
+        return 'C';
+        
+    } else if (student.marks >= 60 && student.marks <= 69 ) {
+        return 'D';
+        
+    } else if (student.marks < 60 ) {
+        return 'F';
+        
+    } 
+
+
+}
+
+
+const grade = studentGrade("Raj");
+console.log(grade);
+
+
+
 
