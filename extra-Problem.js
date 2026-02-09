@@ -246,66 +246,183 @@
 
 
 
-function expenseReport(data) {
-    // write your code here
+// function expenseReport(data) {
+//     // write your code here
 
-    if (Array.isArray(data) !== true) {
-        return 'Invalid';
+//     if (Array.isArray(data) !== true) {
+//         return 'Invalid';
 
-    } 
+//     } 
 
 
 
-    let validExpense = [] ;
-    let totalAmount = 0
-    let amount = 0
-    let topCategory = null ;
+//     let validExpense = [] ;
+//     let totalAmount = 0
+//     let amount = 0
+//     let topCategory = null ;
 
-    for ( const arr of data) {
+//     for ( const arr of data) {
 
-        // console.log(typeof arr);
         
-        if (typeof arr === 'object' && typeof arr.category === 'string' && typeof arr.amount === 'number' && arr.amount > 0) {
+//         if (typeof arr === 'object' && typeof arr.category === 'string' && typeof arr.amount === 'number' && arr.amount > 0) {
             
-            validExpense.push(arr)
-            totalAmount += arr.amount ;
+//             validExpense.push(arr)
+//             totalAmount += arr.amount ;
 
-            if ( arr.amount > amount) {
+//             if ( arr.amount > amount) {
                 
-                topCategory = arr.category ;
-            }
+//                 topCategory = arr.category ;
+//             }
 
-        } 
-    }
+//         } 
+//     }
 
-    if (validExpense.length === 0) {
+//     if (validExpense.length === 0) {
         
-        return 'Invalid'
-    }
+//         return 'Invalid'
+//     }
     
     
-    const average = Math.round(totalAmount / validExpense.length);
-    // console.log(validExpense , totalAmount , topCategory , average);
+//     const average = Math.round(totalAmount / validExpense.length);
 
-    return {
+//     return {
 
-        total : totalAmount ,
-        average ,
-        topCategory
-    }
+//         total : totalAmount ,
+//         average ,
+//         topCategory
+//     }
 
-}
-
-
-const expense = expenseReport([
-  { category: "food", amount: 1200 },
-  { category: "rent", amount: 8000 },
-  { category: "food", amount: -300 },
-  { category: "travel", amount: 1500 },
-  { category: 123, amount: 500 },
-  { category: "rent", amount: 2000 }
-]);
+// }
 
 
-console.log(expense);
+// const expense = expenseReport([
+//   { category: "food", amount: 1200 },
+//   { category: "rent", amount: 8000 },
+//   { category: "food", amount: -300 },
+//   { category: "travel", amount: 1500 },
+//   { category: 123, amount: 500 },
+//   { category: "rent", amount: 2000 }
+// ]);
 
+
+// console.log(expense);
+
+
+
+
+// problem
+
+
+// function analyzeMarks(arr) {
+//     // write your code here
+
+//     if (Array.isArray(arr) !== true) {
+        
+//         return 'Invalid';
+//     }
+
+//     let count = 0 ;
+//     let total = 0;
+//     let max = -Infinity ;
+//     let min = Infinity ;
+
+//     for(const number of arr){
+
+//         if (typeof number === 'number' && number >= 0 && number <= 100  ) {
+            
+//             count ++ ;
+//             total += number ;
+
+//             if (max < number) { 
+//                 max = number;
+
+//             } 
+//             if (min > number ) {
+//                 min = number;
+//             }
+//         }
+
+//     }
+    
+//     if (count === 0) {
+        
+//         return 'Invalid';
+//     }
+
+//     const average = Math.round(total / count);
+//     let status = null ;
+//     if (average >= 40 ) {
+        
+//         status = 'Pass';
+        
+//     }else{
+
+//         status = 'Fail';
+//     }
+
+//     return{
+
+//         count,
+//         max,
+//         min,
+//         average,
+//         status
+//     }
+
+// }
+
+
+// const result = analyzeMarks([45, 60, "70", -10, 90, 110, 30]);
+// console.log(result);
+
+
+// function removeDuplicate(arr) {
+    
+//     if (Array.isArray(arr) !== true) {
+//         return 'Invalid';
+//     }
+
+//     let newArr = [];
+//     for(const a of arr){
+
+//         if (newArr.includes(a) === false) {
+            
+//             newArr.push(a);
+//         }
+//     }
+//     return newArr ;
+// }
+
+
+// function reverseWords(str) {
+    
+//     if (typeof str !== 'string') {
+        
+//         return 'Invalid';
+//     }
+
+//     const words = str.split(' ');
+
+//     let  reverse = []
+
+//     for(const word of words){
+
+//         // console.log(word);
+//         // word.reverse();
+//         const rev = word.split('').reverse().join('');
+//         reverse.push(rev)
+
+//     }
+
+//     const rr = reverse.shift(reverse);
+
+//     console.log(rr);
+    
+
+//     return reverse ;
+    
+
+// }
+
+// const reverse = reverseWords(" I love JS ");
+// console.log(reverse);
