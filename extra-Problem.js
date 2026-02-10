@@ -426,3 +426,39 @@
 
 // const reverse = reverseWords(" I love JS ");
 // console.log(reverse);
+
+
+
+function validateUsername(password) {
+    
+    if (typeof password !== 'string') {
+        return 'Invalid';
+    }
+
+    if (password.length <5 || password.length > 12) {
+        
+        return false
+    }
+    if (password.includes(' ') === true){
+
+            return false ;
+    }
+
+
+
+    for(const pass of password){
+
+        if (!((pass >= 'a' && pass <= 'z')  || 
+            (pass >= 'A' && pass <='Z') ||
+            (pass >= '0' && pass <= '9')) )
+        {
+            return false ;
+        }
+    }
+
+    return true ;
+    
+}
+
+const valid = validateUsername('ss'); 
+console.log(valid);
